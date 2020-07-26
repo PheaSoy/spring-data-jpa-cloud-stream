@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    stream:
+        bindings:
+          task_output:
+            destination: task_event
+          task_input:
+            destination: task_event
+            group: task_event_group

@@ -1,6 +1,7 @@
 package org.soyphea.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,12 +25,13 @@ public class Task {
 
   private String name;
   private String description;
-  private LocalDate localDate;
+  @JsonProperty("due_date")
+  private LocalDate dueDate;
 
-  public Task(String name, String description, LocalDate localDate) {
+  public Task(String name, String description, LocalDate dueDate) {
     this.name = name;
     this.description = description;
-    this.localDate = localDate;
+    this.dueDate = dueDate;
   }
 
 }
