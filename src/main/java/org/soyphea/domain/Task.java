@@ -2,6 +2,7 @@ package org.soyphea.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +18,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Task {
+public class Task{
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)

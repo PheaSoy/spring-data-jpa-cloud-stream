@@ -1,6 +1,6 @@
 package org.soyphea.controller;
 
-import org.soyphea.TaskService;
+import org.soyphea.service.TaskService;
 import org.soyphea.domain.Task;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

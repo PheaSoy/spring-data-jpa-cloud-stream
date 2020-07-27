@@ -1,13 +1,12 @@
 package org.soyphea.binder;
 
 import lombok.extern.slf4j.Slf4j;
-import org.soyphea.domain.Task;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
 @Slf4j
-public class TaskSender<T extends Task> {
+public class TaskSender<T> {
   final private TaskEventProcessor taskEventProcessor;
 
   public TaskSender(TaskEventProcessor taskEventProcessor) {
